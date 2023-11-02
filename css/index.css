@@ -1,0 +1,280 @@
+.corpoSite{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: #a8dadc;
+    transition: 3s;
+}
+
+.bannerPrincipal{
+    background-image: url("../img/bannerExemplo.webp");
+    background-size: cover;
+    background-position: center ;
+    width: 100%;
+    height: 50vh;   
+}
+
+.apresentacao{
+    padding: 1.5em;
+    max-width: 80em;
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxIconeApresentacao{
+   margin-top: 1em;
+    width: 8em;
+    display: flex;
+    justify-content: end;
+}
+#denteApresentacao{
+    width: 5em;   
+}
+
+.nomeApresentacao{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    display: block;
+    font-size: 2em;
+    color: rgb(0, 160, 160);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;   
+}
+
+.descApresentacao{
+    font-family: Arial, Helvetica, sans-serif;
+    display: block;
+    text-justify: auto;
+    font-size: .9em;
+    line-height: 1.8em;
+}
+
+.boxTratamentos{
+    padding: 1.5em;
+    max-width: 80em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: space-around;
+}
+
+.tituloTratamentos{
+    font-family: Arial, Helvetica, sans-serif;
+    letter-spacing: .6em;
+    margin-bottom: 1em;
+    color: #333333;
+    text-shadow: 2px 2px 3px; 
+    margin-top: 2em;
+    margin-right: auto;
+    margin-left: auto;
+    width: 70vw;
+}
+
+.boxTratamento{
+    
+    width: 18em;
+    padding: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.imgTramento{
+    border-top-left-radius: 2em;
+    border-bottom-right-radius: 2em;
+    width: 17em;
+
+}
+
+.tituloTratamento{
+    margin-top: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+    font-weight: bolder;  
+}
+
+.descricaoTratamento{
+    margin-top: 1em;
+    font-size: .8em;
+    text-align: center;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    line-height: 1.8em;
+    font-weight: lighter;
+}
+
+.demaisTratamentos{
+    padding: 1em;
+    width: 85%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+   
+}
+
+.listaTratamento{
+    background-color: #bde0fe56;
+    padding: .5em;
+    
+    list-style: none;
+    width: 25em;
+    
+}
+
+.itemListaTratamento{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(2, 207, 207);
+    padding: 2em;
+    margin: .5em;
+    min-width: 12em ;
+    
+    color: white;
+    font-weight: bolder;
+    border-radius: 1em ;
+}
+
+.propaganda{
+    padding: 1.5em;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #caf0f8;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.boxPropaganda{
+    max-width: 90%;
+}
+
+.iconeApertoMao{
+    width: 10em;
+}
+
+.tituloPropaganda{
+    color:#333333 ;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.5em;
+    margin-bottom: 1.3em;
+    padding-right: .5em;
+}
+
+.descPropaganda{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-right: .5em;
+    
+    width: 80%;
+}
+
+.curriculoDigital{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  
+   
+}
+
+.cardFotoDesc{
+    margin: 1em;
+    background-color: transparent;
+    width: 33em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.fotoCurriculo{
+    padding: .1em;
+    width: 20em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 2em;
+    box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.nomeCurriculo{
+    font-size: 1.5em;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    text-align: center;
+    margin-bottom: .3em;
+}
+
+.descProfissao{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #696969;
+    display: block;
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.descricaoCardFotos{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: .9em;
+    padding: 1em;
+    text-align: center;
+}
+
+.cardCurriculo{
+    margin: 1em;
+
+    width: 33em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.info-list{
+    list-style: none;
+    margin: .1em;
+    padding: 1em;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: .8em;
+}
+
+.info-list li{
+    background-color: aqua;
+    margin: .5em;
+    padding: .7em;
+    border-radius: .8em;
+    font-size: 1.5em;
+}
+.fotosServico{
+    display: flex;
+}
+
+.areaInstagran{
+    display: flex;
+}
+
+.infoConvenio{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  
+    padding: 2em;
+}
+
+.boxConvenio{
+    background-color: #dcfdba;
+    border-radius: 10em;
+    margin: 1em;
+    transition: 1s;
+}
+
+.contatos{
+    display: flex;
+}
+
+

@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <title>Prontuario Eletrônico Odonto</title>
+          
+          <!-- Favicon -->
+          <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+          
+          <!-- Library / Plugin Css Build -->
+          <link rel="stylesheet" href="./assets/css/core/libs.min.css" />
+          
+          
+          <!-- Hope Ui Design System Css -->
+          <link rel="stylesheet" href="./assets/css/hope-ui.min.css?v=1.0.3" />
+          
+          <!-- Custom Css -->
+          <link rel="stylesheet" href="./assets/css/custom.min.css?v=1.0.3" />  
+
+          <link rel="stylesheet" href="./assets/css/index.css">
+    </head>
+  <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
+
+    <div class="container">
+        <nav>
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center">
+                    <div class="nav nav-tabs mb-4" id="nav-tab" role="tablist">
+                        <button class="nav-link active" id="nav-home-tab" data-bs-toggle="tab" data-bs-target="#nav-home" type="button" role="tab" aria-controls="nav-home" aria-selected="true">Home</button>
+                        <button class="nav-link" id="nav-profile-tab" data-bs-toggle="tab" data-bs-target="#nav-profile" type="button" role="tab" aria-controls="nav-profile" aria-selected="false">Cadastrar Paciente</button>
+                        <button class="nav-link" id="nav-contact-tab" data-bs-toggle="tab" data-bs-target="#nav-contact" type="button" role="tab" aria-controls="nav-contact" aria-selected="false">Configuração</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+            <div class="tab-content" id="nav-tabContent">
+
+            <!-- HOME    -->
+            <div class="tab-pane fade show active" id="nav-home" role="tabpanel" aria-labelledby="nav-home-tab">
+                
+                <div class="container boxItensMenu">
+
+                        <div class="cardItemMenu">
+                        <img src="./assets/images/paciente.png">
+                        <p class="h6 mb-2 tituloItemMenu">ATENDER PACIENTE</p>
+                        </div>
+
+                        <div class="cardItemMenu">
+                            <img src="./assets/images/historico-medico.png">
+                            <p class="h6 mb-2 tituloItemMenu">HISTORICO PACIENTE</p>
+                        </div>
+
+                </div>
+
+            </div>
+
+            <!-- CADASTRAR PACIENTE -->
+            <div class="tab-pane fade" id="nav-profile" role="tabpanel" aria-labelledby="nav-profile-tab">
+                
+                <div class="container">
+
+                    <p class="h1 mb-3">Formulario de Cadastro do Paciente</span></p>
+
+                    <form>
+                        
+                        <div class="form-floating mb-3">
+                            <input type="text" class="form-control" id="nomePaciente" placeholder="">
+                            <label for="nomePaciente">Nome do Paciente</label>
+                        </div>
+                        
+
+
+                    <div class="container">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+                                        <div class="form-floating mb-3">
+                                            <input type="date" class="form-control" id="nasc" placeholder="00/00/0000">
+                                            <label for="nasc">Data de Nascimento</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                </div>
+                                <div class="col-sm-6">
+                                <div class="card">
+                                    <div class="card-body">
+
+                                    
+                                            
+                                            <p class="h6">Sexo:</span></p>
+                                            
+
+                                        <div class="form-check">
+                                            <input type="radio" name="radios" class="form-check-input" id="radioMasculino"  value="1">
+                                            <label class="form-check-label" for="radioMasculino">MASCULINO</label>
+                                        </div>
+                                        <div class="form-check">
+                                            <input type="radio" name="radios" class="form-check-input" id="radioFeminino" value="2" checked>
+                                            <label class="form-check-label" for="radioFeminino"  >FEMININO</label>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="mae" placeholder="">
+                        <label for="mae">Nome da Mãe</label>
+                    </div>
+
+
+
+
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="pai" placeholder="">
+                        <label for="pai">Nome do Pai</label>
+                    </div>
+
+
+
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <p class="h6 mb-2">Contato:</span></p>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="tel1" placeholder="">
+                                        <label for="tel1">Telefone Celular:</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="tel2" placeholder="">
+                                        <label for="tel2">Telefone Contato:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <p class="h6 mb-2">Documentos:</span></p>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="cpf" placeholder="">
+                                        <label for="cpf">CPF:</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="rg" placeholder="">
+                                        <label for="rg">RG:</label>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+
+                    <div class="container">
+                        <p class="h4 mb-3">Endereço:</span></p>
+                        <div class="row">
+                            <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <div class="form-floating mb-3" id="divCep">
+                                        <!-- <input type="text" class="form-control" id="cep" placeholder="">
+                                        <label for="cep">CEP:</label> -->
+                                        <div id="divCepCarregando" class="spinner-grow text-primary" role="status">
+                                            <span class="visually-hidden">Loading...</span>
+                                        </div>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="nCasa" placeholder="">
+                                        <label for="nCasa">Numero da Casa:</label>
+                                    </div>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="col-sm-6">
+                            <div class="card">
+                                <div class="card-body">
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="logradouro" >
+                                        <label for="logradouro">Logradouro:</label>
+                                    </div>
+
+                                    <div class="form-floating mb-3">
+                                        <input type="text" class="form-control" id="complemento" placeholder="">
+                                        <label for="complemento">Complemento:</label>
+                                    </div>
+                                 </div>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+                    
+                       
+                    <div class="container mt-3">
+                        <div class="row justify-content-end">
+                            <div class="col-auto">
+                                <button type="button" id="btnCadastrar" class="btn btn-primary mb-3">Cadastrar</button>
+                            </div>
+                    </div>
+                    
+                    </form>
+                </div>
+            </div>
+            </div>
+
+            <!-- Configuração -->
+            <div class="tab-pane fade" id="nav-contact" role="tabpanel" aria-labelledby="nav-contact-tab">
+                <p><strong>This is some placeholder content the Contact tab's associated content.</strong> Clicking another tab will toggle the visibility of this one for the next. The tab JavaScript swaps classes to control the content visibility and styling. You can use it with tabs, pills, and any other <code>.nav</code>-powered navigation.</p>
+            </div>
+
+        </div>
+    </div>
+    
+
+   <!-- Required Library Bundle Script -->
+   <script src="./assets/js/core/libs.min.js"></script>
+    
+   <!-- External Library Bundle Script -->
+   <script src="./assets/js/core/external.min.js"></script>
+   
+   <!-- App Script -->
+   <script src="./assets/js/hope-ui.js" defer></script>
+       <script src="./assets/js/plugins/prism.mini.js"></script>
+       <script src="./assets/js/request.js"></script>
+       <script src="./assets/js/funcoes.js"></script>
+       <script src="./assets/js/index.js"></script>
+      
+       
+ </body>
+</html>
