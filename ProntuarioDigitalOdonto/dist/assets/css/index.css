@@ -29,4 +29,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    margin-top: -3em;
+    visibility: hidden;
+    margin-bottom: 2em;
 }

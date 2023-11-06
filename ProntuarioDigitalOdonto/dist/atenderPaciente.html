@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="utf-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+          <title>Prontuario Eletrônico Odonto</title>
+          
+          <!-- Favicon -->
+          <link rel="shortcut icon" href="./assets/images/favicon.ico" />
+          
+          <!-- Library / Plugin Css Build -->
+          <link rel="stylesheet" href="./assets/css/core/libs.min.css" />
+          
+          
+          <!-- Hope Ui Design System Css -->
+          <link rel="stylesheet" href="./assets/css/hope-ui.min.css?v=1.0.3" />
+          
+          <!-- Custom Css -->
+          <link rel="stylesheet" href="./assets/css/custom.min.css?v=1.0.3" />  
+
+          <link rel="stylesheet" href="./assets/css/atenderPaciente.css">
+    </head>
+  <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
+
+<div class="container mt-5">
+    <div class="bd" id="boxInteface">
+        <nav id="navegarAtendimento">
+            <div class="nav nav-tabs mb-3" id="nav-tab" role="tablist">
+                
+                <button onclick="itemSelecionadoMenu(0)" class="btnMenu" id="btnEvolucao"><img id="iconeEvolucao" class="imgMenu" src="./assets/images/EvolucaoB.png" alt=""></button>
+                
+                <button onclick="itemSelecionadoMenu(1)" class="btnMenu" id="btnPrescricao"><img id="iconePrescricao" class="imgMenu" src="./assets/images/prescricao.png" alt=""></button>
+                
+                <button onclick="itemSelecionadoMenu(2)" class="btnMenu" id="btnAtestado" ><img id="iconeAtestado" class="imgMenu" src="./assets/images/atestado-medico.png" alt=""></button>
+                
+                <button class="btnAcao btn btn-outline-success mb-2 mt-3" id="btnGravar">Gravar</button>
+                <button class="btnAcao btn btn-outline-warning" id="btnSair">Sair</button>
+            </div>
+
+        </nav>
+        <div class="tab-content" id="nav-tabContent">
+
+            <!-- EVLUCAO DO PACIENTE -->
+            <div class="container">
+                <div id="boxEvolucao" class="container boxInterfacesProntuario">
+                    
+                    <div class="container mt-3 mb-3 boxInputEvolucao">
+                                <label for="EvolucaoTextarea" class="form-label   display-6 azulPadrao"><strong>Evolucao Paciente</strong></label>
+                                <textarea class="form-control resize-none" id="EvolucaoTextarea" ></textarea>
+                    </div>
+            </div>
+
+            <!-- PRESCRICAO MEDICA -->
+            <div class="container mt-3">
+                <div id="boxPrescricao" class="container boxInterfacesProntuario">
+
+                    <h2 class="mb-4 azulPadrao">
+                        Prescrição Médica
+                    </h2>
+
+                    <form class="bg-white">
+                        <div class="card-body ">
+                            <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                <input type="text" class="form-control" id="inputPrescricao" placeholder="">
+                                <label for="inputPrescricao">Prescrição</label>
+                            </div>
+                        
+                            <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                <input type="text" class="form-control" id="inputPrescricaoQtd" placeholder="">
+                                <label for="inputPrescricaoQtd">Quantidade</label>
+                            </div>
+
+                            <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                <textarea class="form-control" placeholder="" id="inputPrescricaoRecomendacoes"></textarea>
+                                <label for="inputPrescricaoRecomendacoes">Recomendações</label>
+                            </div>
+                            
+                        </div>
+                    </form>
+
+                </div>
+            </div>
+
+            <!-- ATESTADO MEDICO -->
+            <div  class="container mt-3">
+                <div id="boxAtestado" class="container boxInterfacesProntuario">
+                    
+                    <h2 class="mb-4 azulPadrao">
+                        Atesdado Médico
+                    </h2>
+
+                    <form class="bg-white">
+                        <div class="card-body ">
+                            <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                <input type="text" class="form-control larguraReduzida" id="inputAtesdadoCid" placeholder="">
+                                <label for="inputAtesdadoCid">Cid</label>
+                            </div>
+                        
+                            <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                <input type="text" class="form-control larguraReduzida" id="inputAtesdadoQtd" placeholder="">
+                                <label for="inputAtesdadoQtd">Dias de afastamento</label>
+                            </div>
+
+                            <div class="form-floating custom-form-floating custom-form-floating-lg form-group mb-3">
+                                <textarea class="form-control" placeholder="" id="inputAtesdadoComplemento"></textarea>
+                                <label for="inputAtesdadoComplemento">Complemento</label>
+                            </div> 
+                        </div>
+                        <div class="container mb-3">
+                            <button id="btnAddAtestado" type="button" class="btn btn-primary">Adicionar</button>
+                        </div>
+                        <br/>
+                     
+                    </form>
+
+                    <div class="container mt-3">
+                        <div class="accordion" id="accordionAtestado">
+                            
+                            <!-- <div class="accordion-item">
+                                <h4 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Atestado 04/11/2023 <span class="apagar">&emsp;🗑</span>
+                                    </button>
+                                </h4>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            f01<br/>5 dias<br/>Cirurgia bucomaxilo
+                                            <br><a href="">Imprimir</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+
+                        </div>
+                    </div>
+                </div>
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+  <!-- Required Library Bundle Script -->
+  <script src="./assets/js/core/libs.min.js"></script>
+    
+  <!-- External Library Bundle Script -->
+  <script src="./assets/js/core/external.min.js"></script>
+  
+  <!-- App Script -->
+  <script src="./assets/js/hope-ui.js" defer></script>
+      <script src="./assets/js/plugins/prism.mini.js"></script>
+      <script src="./assets/js/request.js"></script>
+      <script src="./assets/js/funcoes.js"></script>
+      <script src="./assets/js/atenderPaciente.js"></script>
+      
+</body>
+</html>

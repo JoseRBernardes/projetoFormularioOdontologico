@@ -33,3 +33,13 @@ const somenteNumeros = (evento) =>{
 
     evento.target.value = correcao
 }
+
+const dataAtualPadraoPagina = ()=>{
+    let dataAtual = new Date();
+
+    let ano = dataAtual.getFullYear();
+    let mes = dataAtual.getMonth() + 1;
+    let dia = dataAtual.getDate();
+
+    return dia+"/"+mes+"/"+ano
+}

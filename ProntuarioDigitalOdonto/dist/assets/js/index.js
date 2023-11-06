@@ -10,6 +10,7 @@ const tel1 = document.getElementById("tel1")
 const tel2 = document.getElementById("tel2")
 const nCasa = document.getElementById("nCasa")
 const divCep = document.getElementById("divCep")
+const divCepCarregando = document.getElementById("divCepCarregando")
 
 //FUNCOES DA PAGINA INDEX
 const cadastrarPaciente = () =>{
@@ -19,12 +20,18 @@ const cadastrarPaciente = () =>{
 
 }
 
-const procurarLogradouro = async ()=>{
-
-  const  componente = "<div id=\"divCepCarregando\" class=\"spinner-grow text-primary\"role=\"status\"><span class=\"visually-hidden\">Loading...</span></div>"
+const procurarLogradouro =()=>{
 
     if(inputCep.value.length > 0){
-     await requestBucasporCep(inputCep.value)
+     divCep.style.visibility='hidden'
+     divCepCarregando.style.visibility='visible'
+     document.getElementById("logradouro").value = ""
+     requestBucasporCep(inputCep.value).then((obj)=>{
+        divCep.style.visibility='visible'
+        divCepCarregando.style.visibility='hidden'
+     })
+     
+     
     }
 }
 

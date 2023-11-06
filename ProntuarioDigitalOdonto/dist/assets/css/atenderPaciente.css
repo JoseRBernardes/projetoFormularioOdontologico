@@ -1,0 +1,100 @@
+.azulPadrao{
+    color: #3a57e8;
+}
+
+
+#navegarAtendimento{
+    
+    height: 100vh;
+    width: 12em;
+}
+
+#nav-tab{
+    display: flex;
+    flex-direction: column;
+}
+
+#boxInteface{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: row ;
+    
+}
+
+#nav-tab{
+    width: 12em;
+}
+
+.btnMenu{
+    background-color: white;
+    width: 12em;
+    border: none;
+    border-radius: 1em;
+    transition: .9s;
+}
+
+#btnEvolucao{
+    background-color: #3a57e8;
+}
+
+.imgMenu{
+    margin: 1em;
+}
+
+.boxInterfacesProntuario{
+    display: none;
+    padding: 1em;
+    background-color: #d3f4fd;
+    border-radius: 1em;
+}
+
+#boxEvolucao{
+    display: block;
+   
+}
+
+.boxInputEvolucao{
+   width:60vw;
+ 
+}
+
+#EvolucaoTextarea{
+    height: 50vh;
+}
+
+#inputPrescricao{
+    width: 60vw;
+}
+
+#inputPrescricaoQtd{
+    width: 20vw; 
+}
+
+#inputPrescricaoRecomendacoes{
+    height: 15em;
+}
+
+#inputAtesdadoComplemento{
+    width: 40vw;
+    height: 10em;
+}
+
+.larguraReduzida{
+    width: 15em;
+}
+
+.btnAcao{
+    font-size: 1.5em;
+}
+
+#btnAddAtestado{
+    display: block;
+    margin: 1em;
+    margin-left: auto;
+}
+
+.apagar{
+    display: block;
+    
+    
+}
