@@ -22,12 +22,13 @@
 }
 
 #nav-tab{
-    width: 12em;
+    width: 10em;
+    display: flex;
 }
 
 .btnMenu{
     background-color: white;
-    width: 12em;
+    width: 10em;
     border: none;
     border-radius: 1em;
     transition: .9s;
@@ -39,6 +40,7 @@
 
 .imgMenu{
     margin: 1em;
+    width: 5em;
 }
 
 .boxInterfacesProntuario{
@@ -71,12 +73,12 @@
 }
 
 #inputPrescricaoRecomendacoes{
-    height: 15em;
+    height: 15vh;
 }
 
 #inputAtesdadoComplemento{
     width: 40vw;
-    height: 10em;
+    height: 15vh;
 }
 
 .larguraReduzida{
@@ -87,7 +89,7 @@
     font-size: 1.5em;
 }
 
-#btnAddAtestado{
+.btnPront{
     display: block;
     margin: 1em;
     margin-left: auto;
@@ -95,6 +97,4 @@
 
 .apagar{
     display: block;
-    
-    
 }

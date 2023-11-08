@@ -18,7 +18,10 @@
           <!-- Custom Css -->
           <link rel="stylesheet" href="./assets/css/custom.min.css?v=1.0.3" />  
 
+          <!-- Css Individual -->
           <link rel="stylesheet" href="./assets/css/atenderPaciente.css">
+
+          
     </head>
   <body class=" " data-bs-spy="scroll" data-bs-target="#elements-section" data-bs-offset="0" tabindex="0">
 
@@ -76,7 +79,34 @@
                             </div>
                             
                         </div>
+                        <div class="container mb-3">
+                            <button id="btnAddPrescricao" type="button" class="btn btn-primary btnPront">Adicionar</button>
+                        </div>
+                        <br/>
                     </form>
+
+                    <div class="container mt-3">
+                        <div class="accordion" id="accordionReceituario">
+                            
+                            <!-- <div class="accordion-item">
+                                <h4 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        Atestado 04/11/2023 <span class="apagar">&emsp;🗑</span>
+                                    </button>
+                                </h4>
+                                <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <p>
+                                            f01<br/>5 dias<br/>Cirurgia bucomaxilo
+                                            <br><a href="">Imprimir</a> 
+                                        </p>
+                                    </div>
+                                </div>
+                            </div> -->
+                            
+
+                        </div>
+                    </div>
 
                 </div>
             </div>
@@ -107,7 +137,7 @@
                             </div> 
                         </div>
                         <div class="container mb-3">
-                            <button id="btnAddAtestado" type="button" class="btn btn-primary">Adicionar</button>
+                            <button id="btnAddAtestado" type="button" class="btn btn-primary btnPront">Adicionar</button>
                         </div>
                         <br/>
                      
@@ -152,6 +182,9 @@
   <!-- External Library Bundle Script -->
   <script src="./assets/js/core/external.min.js"></script>
   
+  <!-- Gerador de Cpf -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/1.4.1/jspdf.debug.js" integrity="sha384-THVO/sM0mFD9h7dfSndI6TS0PgAGavwKvB5hAxRRvc0o9cPLohB0wb/PTA7LdUHs" crossorigin="anonymous"></script>
+
   <!-- App Script -->
   <script src="./assets/js/hope-ui.js" defer></script>
       <script src="./assets/js/plugins/prism.mini.js"></script>
